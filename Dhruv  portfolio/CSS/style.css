@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Container {
+    background-color: rgb(18, 18, 68);
+    width: 98%;
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    padding: 10px 0;
+}
+
+.Logos h1 {
+    margin-left: 10px;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.GridView {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(46, 57, 211);
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 25px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.hamburger button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
